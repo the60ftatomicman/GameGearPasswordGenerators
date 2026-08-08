@@ -1,0 +1,198 @@
+Sonic Chaos Offsets
+
+-- SMS -- 
+-level layout offset
+48000 - THZ1 layout
+48BA9 - THZ2 layout
+49815 - THZ3 layout
+49C25 - GPZ1 layout
+4AA00 - GPZ2 layout
+4B897 - GPZ3 layout
+54000 - SEZ1 layout
+54CC8 - SEZ2 layout
+53460 - SEZ3 layout
+559D4 - MGHZ1 layout
+566B8 - MGHZ2 layout
+572FB - MGHZ3 layout
+5C000 - APZ1 layout
+5C7C1 - APZ2 layout
+57AF3 - APZ3 layout
+5CF3A - EEZ1 layout
+5DB73 - EEZ2 layout
+5E853 - EEZ3 layout
+68000 - SS1 layout
+685A8 - SS2 layout
+68848 - SS3 layout
+68C1E - SS4 layout
+69258 - SS5 layout
+ 
+-mappings offset
+44000 Mappings THZ1
+45640 Mappings GPZ
+46A40 Mappings SEZ
+50000 Mappings MGHZ
+51320 Mappings APZ
+524E0 Mappings EEZ
+6C000 Mappings SS1/2/4
+6CF60 Mappings SS3/5
+ 
+-tileset offset
+40F9E tileset THZ
+42478 tileset GPZ
+60000 tileset SEZ
+619F0 tileset MGHZ
+58000 tileset APZ
+59800 tileset EEZ
+64000 tileset SS1/2/4
+65590 tileset SS3/5
+ 
+-foreground palette offset
+3B6AD - THZ
+3B6BD - GPZ
+3B6CD - SEZ
+3B6DD - MGHZ
+3B6ED - APZ
+3B6FD - EEZ
+3B76D - SS1/2/4
+3B77D - SS3
+3B78D - SS5
+ 
+-background palette offset
+3B79D - THZ
+3B7AD - GPZ
+3B7BD - SEZ
+3B7CD - MGHZ
+3B7DD - APZ
+3B7ED - EEZ
+3B8AD - SS1/2/4
+3B8BD - SS3/5
+ 
+-tile offset
+192 for all levels
+ 
+-width/height
+THZ1 width 128 height 32
+THZ2 width 128 height 32
+THZ3 width 80 height 16
+GPZ1 width 160 height 24
+GPZ2 width 128 height 32
+GPZ3 width 80 height 16
+SEZ1 width 128 height 32
+SEZ2 width 128 height 32
+SEZ3 width 128 height 32
+MGHZ1 width 128 height 32
+MGHZ2 width 128 height 32
+MGHZ3 width 120 height 24
+APZ1 width 168 height 24
+APZ2 width 128 height 32
+APZ3 width 80 height 16
+EEZ1 width 128 height 32
+EEZ2 width 128 height 32
+EEZ3 width 112 height 32
+SS1 Width 512 Height 8
+SS2 Width 24 Height 64
+SS3 Width 128 Height 24
+SS4 Width 256 Height 16
+SS5 Width 48 Height 32
+
+
+-- GG -- 
+-level layout offset
+| Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **THZ1** | 48000 | 48000 | 0 | 0 | yes |
+| **THZ2** | 48BA9 | 48BA9 | 0 | 0 | yes |
+| **THZ3** | ????? | 49815 | | | |
+| **GPZ1** | | 49C25 | | | |
+| **GPZ2** | | 4AA00 | | | |
+| **GPZ3** | | 4B897 | | | |
+| **SEZ1** | | 54000 | | | |
+| **SEZ2** | | 54CC8 | | | |
+| **SEZ3** | | 53460 | | | |
+| **MGHZ1**| | 559D4 | | | |
+| **MGHZ2**| | 566B8 | | | |
+| **MGHZ3**| | 572FB | | | |
+| **APZ1** | | 5C000 | | | |
+| **APZ2** | | 5C7C1 | | | |
+| **APZ3** | | 57AF3 | | | |
+| **EEZ1** | | 5CF3A | | | |
+| **EEZ2** | | 5DB73 | | | |
+| **EEZ3** | | 5E853 | | | |
+| **SS1**  | | 68000 | | | |
+| **SS2**  | | 685A8 | | | |
+| **SS3**  | | 68848 | | | |
+| **SS4**  | | 68C1E | | | |
+| **SS5**  | | 69258 | | | |
+ 
+-mappings offset
+44000 Mappings THZ1
+45640 Mappings GPZ
+46A40 Mappings SEZ
+50000 Mappings MGHZ
+51320 Mappings APZ
+524E0 Mappings EEZ
+6C000 Mappings SS1/2/4
+6CF60 Mappings SS3/5
+ 
+
+ 
+-tileset offset
+| Zone     | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
+| -------- | --------- | ---------- | -------- | --------- | ------------------ |
+| THZ      | 40A70     | 40F9E      | 52E      | 1,326     | yes                |
+| GPZ      | 41F49     | 42478      | 52F      | 1,327     |                    |
+| SEZ      | 60480     | 60000      | 480      | 1,152     |                    |
+| MGHZ     | | 619F0      |       |      |                 |
+| APZ      | | 58000      |       |      |                 |
+| EEZ      | | 59800      |       |      |                 |
+| SS1/2/4  | | 64000      |       |      |                 |
+| SS3/5    | | 65590      |       |      |                 |
+ 
+-foreground palette offset
+3B6AD - THZ
+3B6BD - GPZ
+3B6CD - SEZ
+3B6DD - MGHZ
+3B6ED - APZ
+3B6FD - EEZ
+3B76D - SS1/2/4
+3B77D - SS3
+3B78D - SS5
+ 
+-background palette offset
+3B79D - THZ
+3B7AD - GPZ
+3B7BD - SEZ
+3B7CD - MGHZ
+3B7DD - APZ
+3B7ED - EEZ
+3B8AD - SS1/2/4
+3B8BD - SS3/5
+ 
+-tile offset
+192 for all levels
+ 
+-width/height
+THZ1 width 128 height 32
+THZ2 width 128 height 32
+THZ3 width 80 height 16
+GPZ1 width 160 height 24
+GPZ2 width 128 height 32
+GPZ3 width 80 height 16
+SEZ1 width 128 height 32
+SEZ2 width 128 height 32
+SEZ3 width 128 height 32
+MGHZ1 width 128 height 32
+MGHZ2 width 128 height 32
+MGHZ3 width 120 height 24
+APZ1 width 168 height 24
+APZ2 width 128 height 32
+APZ3 width 80 height 16
+EEZ1 width 128 height 32
+EEZ2 width 128 height 32
+EEZ3 width 112 height 32
+SS1 Width 512 Height 8
+SS2 Width 24 Height 64
+SS3 Width 128 Height 24
+SS4 Width 256 Height 16
+SS5 Width 48 Height 32
