@@ -1,4 +1,4 @@
-Sonic Chaos Offsets
+Sonic Chaos Offsets OG Doc
 
 -- SMS -- 
 -level layout offset
@@ -124,16 +124,20 @@ SS3 Width 128 Height 24
 SS4 Width 256 Height 16
 SS5 Width 48 Height 32
 
--- GG -- 
+------------------
+- New Doc --------
+------------------
+
+
 -level layout offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **THZ1** | 48000 | 48000 | 0 | 0 | yes |
-| **THZ2** | 48BA9 | 48BA9 | 0 | 0 | yes |
-| **THZ3** | ????? | 49815 | | | |
-| **GPZ1** | | 49C25 | | | |
-| **GPZ2** | | 4AA00 | | | |
-| **GPZ3** | | 4B897 | | | |
+| **THZ1** | 48000 | 48000 | 0  | 0  | yes |
+| **THZ2** | 48BA9 | 48BA9 | 0  | 0  | yes |
+| **THZ3** | 4982C | 49815 | 17 | 23 | yes |
+| **GPZ1** | 49C3B | 49C25 | 16 | 22 | yes |
+| **GPZ2** | 4AA16 | 4AA00 | 16 | 22 | yes |
+| **GPZ3** | 4B8AD | 4B897 | 16 | 22 | yes |
 | **SEZ1** | | 54000 | | | |
 | **SEZ2** | | 54CC8 | | | |
 | **SEZ3** | | 53460 | | | |
@@ -151,25 +155,25 @@ SS5 Width 48 Height 32
 | **SS3**  | | 68848 | | | |
 | **SS4**  | | 68C1E | | | |
 | **SS5**  | | 69258 | | | |
- 
+
+ _LABEL_1024_ (in emulicious you can set a BP here and see the mappings load! via AF register, remember to flip to FA)
 -mappings offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | THZ     | 44000 | 44000 | 0 | 0 | yes |
-| GPZ     |  | 45640 | 0 | 0 | yes |
-| SEZ     |  | 46A40 | 0 | 0 | yes |
-| MGHZ    |  | 50000 | 0 | 0 | yes |
-| APZ     |  | 51320 | 0 | 0 | yes |
-| EEZ     |  | 524E0 | 0 | 0 | yes |
-| SS1/2/4 |  | 6C000 | 0 | 0 | yes |
-| SS3/5   |  | 6CF60 | 0 | 0 | yes |
-
+| GPZ     | 45640 | 45640 | 0 | 0 | yes |
+| SEZ     | | 46A40 | | | |
+| MGHZ    | | 50000 | | | |
+| APZ     | | 51320 | | | |
+| EEZ     | | 524E0 | | | |
+| SS1/2/4 | | 6C000 | | | |
+| SS3/5   | | 6CF60 | | | |
  
 -tileset offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| THZ     | 40A70 | 40F9E | 0 | | yes |
-| GPZ     | | 42478 | | | |
+| THZ     | 40A70 | 40F9E | | | yes |
+| GPZ     | 41F4A | 42478 | | | |
 | SEZ     | | 60000 | | | |
 | MGHZ    | | 619F0 | | | |
 | APZ     | | 58000 | | | |
@@ -177,6 +181,7 @@ SS5 Width 48 Height 32
 | SS1/2/4 | | 64000 | | | |
 | SS3/5   | | 65590 | | | |
  
+
 -foreground palette offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -190,7 +195,6 @@ SS5 Width 48 Height 32
 | SS3     | | 3B77D | | | |
 | SS5     | | 3B78D | | | |
 
- 
  
 -background palette offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
