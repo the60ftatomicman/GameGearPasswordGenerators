@@ -128,33 +128,38 @@ SS5 Width 48 Height 32
 - New Doc --------
 ------------------
 
-
 -level layout offset
-| Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **THZ1** | 48000 | 48000 | 0  | 0  | yes |
-| **THZ2** | 48BA9 | 48BA9 | 0  | 0  | yes |
-| **THZ3** | 4982C | 49815 | 17 | 23 | yes |
-| **GPZ1** | 49C3B | 49C25 | 16 | 22 | yes |
-| **GPZ2** | 4AA16 | 4AA00 | 16 | 22 | yes |
-| **GPZ3** | 4B8AD | 4B897 | 16 | 22 | yes |
-| **SEZ1** | | 54000 | | | |
-| **SEZ2** | | 54CC8 | | | |
-| **SEZ3** | | 53460 | | | |
-| **MGHZ1**| | 559D4 | | | |
-| **MGHZ2**| | 566B8 | | | |
-| **MGHZ3**| | 572FB | | | |
-| **APZ1** | | 5C000 | | | |
-| **APZ2** | | 5C7C1 | | | |
-| **APZ3** | | 57AF3 | | | |
-| **EEZ1** | | 5CF3A | | | |
-| **EEZ2** | | 5DB73 | | | |
-| **EEZ3** | | 5E853 | | | |
-| **SS1**  | | 68000 | | | |
-| **SS2**  | | 685A8 | | | |
-| **SS3**  | | 68848 | | | |
-| **SS4**  | | 68C1E | | | |
-| **SS5**  | | 69258 | | | |
+| Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Level Width | Level Height | Tile Offset | Verified in Aspect |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **THZ1** | 48000 | 48000 | 0  | 0  | 128 | 32 | 192 | yes |
+| **THZ2** | 48BA9 | 48BA9 | 0  | 0  | 128 | 32 | 192 | yes |
+| **THZ3** | 4982C | 49815 | 17 | 23 |  80 | 16 | 192 | yes |
+| | | | | | | | | |
+| **GPZ1** | 49C3B | 49C25 | 16 | 22 | 160 | 24 | 192 | yes |
+| **GPZ2** | 4AA16 | 4AA00 | 16 | 22 | 128 | 32 | 192 | yes |
+| **GPZ3** | 4B8AD | 4B897 | 16 | 22 |  80 | 16 | 192 | yes |
+| | | | | | | | | |
+| **SEZ1** | 54000 | 54000 | 0 | 0 | 128 | 32 | 192 | yes |
+| **SEZ2** | 54CC8 | 54CC8 | 0 | 0 | 128 | 32 | 192 | yes |
+| **SEZ3** | 53460 | 53460 | 0 | 0 | 128 | 32 | 192 | yes |
+| | | | | | | | | |
+| **MGHZ1**| 559D4 | 559D4 | 0 | 0 | 128 | 32 | 192 | yes |
+| **MGHZ2**| 566B8 | 566B8 | 0 | 0 | 128 | 32 | 192 | yes |
+| **MGHZ3**| 572FB | 572FB | 0 | 0 | 120 | 24 | 192 | yes |
+| | | | | | | | | |
+| **APZ1** | | 5C000 | | | 168 | 24 | 192 ||
+| **APZ2** | | 5C7C1 | | | 128 | 32 | 192 ||
+| **APZ3** | | 57AF3 | | |  80 | 16 | 192 ||
+| | | | | | | | | |
+| **EEZ1** | | 5CF3A | | | 128 | 32 | 192 ||
+| **EEZ2** | | 5DB73 | | | 128 | 32 | 192 ||
+| **EEZ3** | | 5E853 | | | 112 | 32 | 192 ||
+| | | | | | | | | |
+| **SS1**  | | 68000 | | | 512 |  8 | 192 ||
+| **SS2**  | | 685A8 | | |  24 | 64 | 192 ||
+| **SS3**  | | 68848 | | | 128 | 24 | 192 ||
+| **SS4**  | | 68C1E | | | 256 | 16 | 192 ||
+| **SS5**  | | 69258 | | |  48 | 32 | 192 ||
 
  _LABEL_1024_ (in emulicious you can set a BP here and see the mappings load! via AF register, remember to flip to FA)
 -mappings offset
@@ -162,26 +167,25 @@ SS5 Width 48 Height 32
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | THZ     | 44000 | 44000 | 0 | 0 | yes |
 | GPZ     | 45640 | 45640 | 0 | 0 | yes |
-| SEZ     | | 46A40 | | | |
-| MGHZ    | | 50000 | | | |
+| SEZ     | 46A40 | 46A40 | 0 | 0 | yes |
+| MGHZ    | 50000 | 50000 | 0 | 0 | yes |
 | APZ     | | 51320 | | | |
 | EEZ     | | 524E0 | | | |
 | SS1/2/4 | | 6C000 | | | |
 | SS3/5   | | 6CF60 | | | |
- 
+
 -tileset offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | THZ     | 40A70 | 40F9E | | | yes |
-| GPZ     | 41F4A | 42478 | | | |
-| SEZ     | | 60000 | | | |
-| MGHZ    | | 619F0 | | | |
+| GPZ     | 41F4A | 42478 | | | yes |
+| SEZ     | 60840 | 60000 | | | yes |
+| MGHZ    | 62230 | 619F0 | | | |
 | APZ     | | 58000 | | | |
 | EEZ     | | 59800 | | | |
 | SS1/2/4 | | 64000 | | | |
 | SS3/5   | | 65590 | | | |
  
-
 -foreground palette offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -195,7 +199,6 @@ SS5 Width 48 Height 32
 | SS3     | | 3B77D | | | |
 | SS5     | | 3B78D | | | |
 
- 
 -background palette offset
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
