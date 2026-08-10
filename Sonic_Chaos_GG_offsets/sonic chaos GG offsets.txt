@@ -1,134 +1,6 @@
-Sonic Chaos Offsets OG Doc
+# Sonic Chaos Offsets Doc #
 
--- SMS -- 
--level layout offset
-48000 - THZ1 layout
-48BA9 - THZ2 layout
-49815 - THZ3 layout
-49C25 - GPZ1 layout
-4AA00 - GPZ2 layout
-4B897 - GPZ3 layout
-54000 - SEZ1 layout
-54CC8 - SEZ2 layout
-53460 - SEZ3 layout
-559D4 - MGHZ1 layout
-566B8 - MGHZ2 layout
-572FB - MGHZ3 layout
-5C000 - APZ1 layout
-5C7C1 - APZ2 layout
-57AF3 - APZ3 layout
-5CF3A - EEZ1 layout
-5DB73 - EEZ2 layout
-5E853 - EEZ3 layout
-68000 - SS1 layout
-685A8 - SS2 layout
-68848 - SS3 layout
-68C1E - SS4 layout
-69258 - SS5 layout
- 
--mappings offset
-44000 Mappings THZ1
-45640 Mappings GPZ
-46A40 Mappings SEZ
-50000 Mappings MGHZ
-51320 Mappings APZ
-524E0 Mappings EEZ
-6C000 Mappings SS1/2/4
-6CF60 Mappings SS3/5
- 
--tileset offset
-40F9E tileset THZ
-42478 tileset GPZ
-60000 tileset SEZ
-619F0 tileset MGHZ
-58000 tileset APZ
-59800 tileset EEZ
-64000 tileset SS1/2/4
-65590 tileset SS3/5
- 
--foreground palette offset
-3B6AD - THZ
-3B6BD - GPZ
-3B6CD - SEZ
-3B6DD - MGHZ
-3B6ED - APZ
-3B6FD - EEZ
-3B76D - SS1/2/4
-3B77D - SS3
-3B78D - SS5
- 
--background palette offset
-3B79D - THZ
-3B7AD - GPZ
-3B7BD - SEZ
-3B7CD - MGHZ
-3B7DD - APZ
-3B7ED - EEZ
-3B8AD - SS1/2/4
-3B8BD - SS3/5
- 
--tile offset
-192 for all levels
- 
--width/height
-THZ1 width 128 height 32
-THZ2 width 128 height 32
-THZ3 width 80 height 16
-GPZ1 width 160 height 24
-GPZ2 width 128 height 32
-GPZ3 width 80 height 16
-SEZ1 width 128 height 32
-SEZ2 width 128 height 32
-SEZ3 width 128 height 32
-MGHZ1 width 128 height 32
-MGHZ2 width 128 height 32
-MGHZ3 width 120 height 24
-APZ1 width 168 height 24
-APZ2 width 128 height 32
-APZ3 width 80 height 16
-EEZ1 width 128 height 32
-EEZ2 width 128 height 32
-EEZ3 width 112 height 32
-SS1 Width 512 Height 8
-SS2 Width 24 Height 64
-SS3 Width 128 Height 24
-SS4 Width 256 Height 16
-SS5 Width 48 Height 32
-
-
--tile offset
-192 for all levels
- 
--width/height
-THZ1 width 128 height 32
-THZ2 width 128 height 32
-THZ3 width 80 height 16
-GPZ1 width 160 height 24
-GPZ2 width 128 height 32
-GPZ3 width 80 height 16
-SEZ1 width 128 height 32
-SEZ2 width 128 height 32
-SEZ3 width 128 height 32
-MGHZ1 width 128 height 32
-MGHZ2 width 128 height 32
-MGHZ3 width 120 height 24
-APZ1 width 168 height 24
-APZ2 width 128 height 32
-APZ3 width 80 height 16
-EEZ1 width 128 height 32
-EEZ2 width 128 height 32
-EEZ3 width 112 height 32
-SS1 Width 512 Height 8
-SS2 Width 24 Height 64
-SS3 Width 128 Height 24
-SS4 Width 256 Height 16
-SS5 Width 48 Height 32
-
-------------------
-- New Doc --------
-------------------
-
--level layout offset
+## level layout offsets ##
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Level Width | Level Height | Tile Offset | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **THZ1** | 48000 | 48000 | 0  | 0  | 128 | 32 | 192 | yes |
@@ -147,22 +19,24 @@ SS5 Width 48 Height 32
 | **MGHZ2**| 566B8 | 566B8 | 0 | 0 | 128 | 32 | 192 | yes |
 | **MGHZ3**| 572FB | 572FB | 0 | 0 | 120 | 24 | 192 | yes |
 | | | | | | | | | |
-| **APZ1** | 5C000 | 5C000 | 0 | 0 | 168 | 24 | 192 | yes |
-| **APZ2** | 5C7C1 | 5C7C1 | 0 | 0 | 128 | 32 | 192 | yes |
-| **APZ3** | 578A6 | 57AF3 | 0 | 0 |  80 | 16 | 192 | yes |
+| **APZ1** | 5C000 | 5C000 |  0  |  0  | 168 | 24 | 192 | yes |
+| **APZ2** | 5C7C1 | 5C7C1 |  0  |  0  | 128 | 32 | 192 | yes |
+| **APZ3** | 578A6 | 57AF3 | 24D | 589 |  80 | 16 | 192 | yes |
 | | | | | | | | | |
-| **EEZ1** | 5CF3A | 5CF3A | | | 128 | 32 | 192 | yes |
-| **EEZ2** | 5DB73 | 5DB73 | | | 128 | 32 | 192 | yes |
-| **EEZ3** | 5E853 | 5E853 | | | 112 | 32 | 192 | yes |
+| **EEZ1** | 5CF3A | 5CF3A | 0 | 0 | 128 | 32 | 192 | yes |
+| **EEZ2** | 5DB73 | 5DB73 | 0 | 0 | 128 | 32 | 192 | yes |
+| **EEZ3** | 5E853 | 5E853 | 0 | 0 | 112 | 32 | 192 | yes |
 | | | | | | | | | |
-| **SS1**  | | 68000 | | | 512 |  8 | 192 ||
-| **SS2**  | | 685A8 | | |  24 | 64 | 192 ||
-| **SS3**  | | 68848 | | | 128 | 24 | 192 ||
-| **SS4**  | | 68C1E | | | 256 | 16 | 192 ||
-| **SS5**  | | 69258 | | |  48 | 32 | 192 ||
+| **SS1**  | 68000 | 68000 | 0 | 0 | 512 |  8 | 192 | yes |
+| **SS2**  | 685A8 | 685A8 | 0 | 0 |  24 | 64 | 192 | yes but omg these values are wrong....|
+| **SS3**  | 68819 | 68848 | | | 128 | 24 | 192 | yes |
+| **SS4**  | 68BEF | 68C1E | | | 256 | 16 | 192 | yes |
+| **SS5**  | 69220 | 69258 | | |  48 | 32 | 192 | yes |
+
+## mappings offset ##
 
  _LABEL_1024_ (in emulicious you can set a BP here and see the mappings load! via AF register, remember to flip to FA)
--mappings offset
+
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | THZ     | 44000 | 44000 | 0 | 0 | yes |
@@ -171,22 +45,22 @@ SS5 Width 48 Height 32
 | MGHZ    | 50000 | 50000 | 0 | 0 | yes |
 | APZ     | 51320 | 51320 | 0 | 0 | yes |
 | EEZ     | 524E0 | 524E0 | 0 | 0 | yes |
-| SS1/2/4 | | 6C000 | | | |
-| SS3/5   | | 6CF60 | | | |
+| SS1/2/4 | 6C000 | 6C000 | 0 | 0 | yes |
+| SS3/5   | 6CF60 | 6CF60 | 0 | 0 | yes |
 
--tileset offset
+## tileset offset ##
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| THZ     | 40A70 | 40F9E | | | yes |
-| GPZ     | 41F4A | 42478 | | | yes |
-| SEZ     | 60840 | 60000 | | | yes |
-| MGHZ    | 62230 | 619F0 | | | yes |
-| APZ     | 58000 | 58000 | | | yes |
-| EEZ     | 59800 | 59800 | 0 | 0 | yes |
-| SS1/2/4 | | 64000 | | | |
-| SS3/5   | | 65590 | | | |
+| THZ     | 40A70 | 40F9E |  0  | 0 | yes |
+| GPZ     | 41F4A | 42478 |  0  | 0 | yes |
+| SEZ     | 60840 | 60000 | 840 | | yes |
+| MGHZ    | 62230 | 619F0 |  0  | 0 | yes |
+| APZ     | 58000 | 58000 |  0  | 0 | yes |
+| EEZ     | 59800 | 59800 |  0  | 0 | yes |
+| SS1/2/4 | 64000 | 64000 |  0  | 0 | yes |
+| SS3/5   | 65590 | 65590 |  0  | 0 | yes |
  
--foreground palette offset
+## foreground palette offset ## 
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | THZ     | | 3B6AD | | | |
@@ -199,7 +73,7 @@ SS5 Width 48 Height 32
 | SS3     | | 3B77D | | | |
 | SS5     | | 3B78D | | | |
 
--background palette offset
+## background palette offset ## 
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | THZ     | | 3B79D | | | |
