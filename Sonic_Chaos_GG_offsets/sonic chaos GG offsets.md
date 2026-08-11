@@ -1,4 +1,37 @@
 # Sonic Chaos Offsets Doc #
+## Level Headers ##
+| Zone | GG Offset | SMS Offset | Bytes |
+| :--- | :--- | :--- | :--- |
+| **THZ1** | 0 | 0 | 0 |
+| **THZ2** | 0 | 0 | 0 |
+| **THZ3** | 0 | 0 | 0 |
+| | | | |
+| **GPZ1** | 0 | 0 | 0 |
+| **GPZ2** | 0 | 0 | 0 |
+| **GPZ3** | 0 | 0 | 0 |
+| | | | |
+| **SEZ1** | 0 | 0 | 0 |
+| **SEZ2** | 0 | 0 | 0 |
+| **SEZ3** | 0 | 0 | 0 |
+| | | | |
+| **MGHZ1**| 0 | 0 | 0 |
+| **MGHZ2**| 0 | 0 | 0 |
+| **MGHZ3**| 0 | 0 | 0 |
+| | | | |
+| **APZ1** | 0 | 0 | 0 |
+| **APZ2** | 0 | 0 | 0 |
+| **APZ3** | 0 | 0 | 0 |
+| | | | |
+| **EEZ1** | 0 | 0 | 0 |
+| **EEZ2** | 0 | 0 | 0 |
+| **EEZ3** | 0 | 0 | 0 |
+| | | | |
+| **SS1**  | 0 | 0 | 0 |
+| **SS2**  | 0 | 0 | 0 |
+| **SS3**  | 0 | 0 | 0 |
+| **SS4**  | 0 | 0 | 0 |
+| **SS5**  | 0 | 0 | 0 |
+
 
 ## level layout offsets ##
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Level Width | Level Height | Tile Offset | Verified in Aspect |
@@ -63,7 +96,7 @@
 ## foreground palette offset ## 
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| THZ     | | 3B6AD | | | |
+| THZ     | 3B8F3 | 3B6AD | | | yes |
 | GPZ     | | 3B6BD | | | |
 | SEZ     | | 3B6CD | | | |
 | MGHZ    | | 3B6DD | | | |
@@ -76,7 +109,7 @@
 ## background palette offset ## 
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| THZ     | | 3B79D | | | |
+| THZ     | 3B713 | 3B79D | | | |
 | GPZ     | | 3B7AD | | | |
 | SEZ     | | 3B7BD | | | |
 | MGHZ    | | 3B7CD | | | |
