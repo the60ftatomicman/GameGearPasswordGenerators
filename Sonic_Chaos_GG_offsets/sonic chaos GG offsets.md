@@ -93,28 +93,32 @@
 | SS1/2/4 | 64000 | 64000 |  0  |  0   | yes |
 | SS3/5   | 65590 | 65590 |  0  |  0   | yes |
  
+ 
+ you found palettes in emulicious by getting to the level and just searching for the string values!
+ memory editor -> palettes. First 2 rows are for foreground, second two rows for background
+ 
 ## foreground palette offset ## 
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | THZ     | 3B8F3 | 3B6AD | | | yes |
-| GPZ     | | 3B6BD | | | |
-| SEZ     | | 3B6CD | | | |
-| MGHZ    | | 3B6DD | | | |
-| APZ     | | 3B6ED | | | |
-| EEZ     | | 3B6FD | | | |
-| SS1/2/4 | | 3B76D | | | |
+| GPZ     | 3B913 | 3B6BD | | | yes |
+| SEZ     | 3B933 | 3B6CD | | | yes |
+| MGHZ    | not found? | 3B6DD | | | |
+| APZ     | 3B973 | 3B6ED | | | yes |
+| EEZ     | 3B993 | 3B6FD | | | yes |
+| SS1/2/4 | 3BB13 | 3B76D | | | yes |
 | SS3     | | 3B77D | | | |
 | SS5     | | 3B78D | | | |
 
 ## background palette offset ## 
 | Zone | GG Offset | SMS Offset | Diff Hex | Diff byte | Verified in Aspect |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| THZ     | 3B713 | 3B79D | | | |
-| GPZ     | | 3B7AD | | | |
-| SEZ     | | 3B7BD | | | |
-| MGHZ    | | 3B7CD | | | |
-| APZ     | | 3B7DD | | | |
-| EEZ     | | 3B7ED | | | |
-| SS1/2/4 | | 3B8AD | | | |
+| THZ     | 3B713          | 3B79D | | | yes |
+| GPZ     | 3B730 or 3B7B3 | 3B7AD | | | |
+| SEZ     | 3B753          | 3B7BD | | | yes |
+| MGHZ    | 3B773          | 3B7CD | | | yes |
+| APZ     | 3B793          | 3B7DD | | | yes |
+| EEZ     | 3B733 or 3B7B3 | 3B7ED | | | |
+| SS1/2/4 | 3B893          | 3B8AD | | | yes |
 | SS3     | | 3B8BD | | | |
 | SS5     | | 3B8BD | | | |
