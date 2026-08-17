@@ -8,13 +8,13 @@
 <table> 
   <tr> 
     <th>Zone</th> 
-    <th colspan="2">Level Header</th> 
+    <th colspan="2">Level Header</th>
     <th colspan="2">Object List</th>
-    <th colspan="5">Level Layout</th> 
-    <th colspan="2">Mapping</th> 
-    <th colspan="2">Tileset</th> 
-    <th colspan="2">Foreground Palette</th> 
-    <th colspan="2">Background Palette</th> 
+    <th colspan="5">Level Layout</th>
+    <th colspan="2">Mapping</th>
+    <th colspan="2">Tileset</th>
+    <th colspan="2">Foreground Palette</th>
+    <th colspan="2">Background Palette</th>
   </tr> 
   <tr> 
     <th></th> 

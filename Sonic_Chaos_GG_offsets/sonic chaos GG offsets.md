@@ -34,6 +34,26 @@
 | **SS5**  | 0 | 0 | 22 |
 
 ## Object Headers ##
+Main table for the Zones is at: 70546
+This points to the sub tables listed below
+| Zone | GG Offset | SMS Offset |
+| :--- | :--- | :--- |
+| **THZ** | 70566 | 0 |
+| | | |
+| **GPZ** | 7056C | 0 |
+| | | |
+| **SEZ** | 70572 | 0 |
+| | | |
+| **MGHZ**| 70578 | 0 |
+| | | |
+| **APZ** | 7057E | 0 |
+| | | |
+| **EEZ** | 70584 | 0 |
+| | | |
+| **SS**  | 0 | 0 |
+
+## Object Tables ##
+These are where we define the actual objects
 | Zone | GG Offset | SMS Offset | Bytes |
 | :--- | :--- | :--- | :--- |
 | **THZ1** | 7078C | 0 | 0 |
