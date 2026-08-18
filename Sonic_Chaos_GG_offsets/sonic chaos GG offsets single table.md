@@ -39,7 +39,7 @@
   <tr> 
     <td>THZ1</td> 
     <td>51A1</td><td></td>
-    <td>7078C</td><td>7078C</td>
+    <td>705AE</td><td>705AE</td>
     <td>48000</td><td>48000</td><td>128</td><td>32</td><td>192</td>
     <td>44000</td><td>44000</td>
     <td>40A70</td><td>40F9E</td>
@@ -49,7 +49,7 @@
   <tr> 
     <td>THZ2</td>
     <td>51B7</td><td></td>
-    <td>705AE</td><td>705AE</td>
+    <td>7078C</td><td>7078C</td>
     <td>48BA9</td><td>48BA9</td><td>128</td><td>32</td><td>192</td>
     <td>44000</td><td>44000</td> 
     <td>40A70</td><td>40F9E</td>

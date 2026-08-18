@@ -51,8 +51,8 @@ This points to the sub tables listed below
 These are where we define the actual objects
 | Zone | GG Offset | SMS Offset | Bytes |
 | :--- | :--- | :--- | :--- |
-| **THZ1** | 7078C | 7078C | 0 |
-| **THZ2** | 705AE | 705AE | 0 |
+| **THZ1** | 705AE | 705AE | 0 |
+| **THZ2** | 7078C | 7078C | 0 |
 | **THZ3** | 708FE | 708FE | 0 |
 | | | | |
 | **GPZ1** | 70959 | 70959 | 0 |
