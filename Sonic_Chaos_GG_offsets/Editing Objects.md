@@ -15,18 +15,18 @@ WW   = tiles to read from the VRAM when the object is reversed
 FF   = end of object list (only appears once)
 
 ## Properties for All objects ##
-$28 $00 $02 $90 $03 -- set at 7078C
+$28 $00 $02 $90 $03 -- set at 705AE
 ## Selecting Object Types (Based on what I see Existing in Roms) ##
 |Type code | What it is | Object Flags | Object params | Applicable Zones |
 | :--- | :--- | :--- | :--- | :--- |
-| 09 | - | 00 | 00 = ??<br> 01 = ?? | THZ<br>GPZ<br>MGHZ<br>APZ<br>EEZ |
+| 09 | Single Ring | 00 | 00 = ??<br> 01 = ?? | THZ<br>GPZ<br>MGHZ<br>APZ<br>EEZ |
 | 0C | - | 00 | 00 | APZ |
 | 10 | TV Monitors | 00 | 08 = Tails 1up<br>06 = star invincibility<br>05 = stopwatch<br>04 = rocket shoes<br>03 = speed shoes<br>02 = sonic 1up<br>01 = rings | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
 | 17 | - | 00 | 02 | EEZ |
-| 18 | - | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
-| 1B | - | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ |
+| 18 | End Level Spinner | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
+| 1B | Pop up Spikes | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ |
 | 20 | - | 00 | 00 =<br>01 = | SEZ |
-| 21 | - | 00 =<br>10 = | 16 =<br>0A =<br>08 =<br>06 =<br>03 =<br>04 =<br>02 =<br>01 = | THZ<br>MGHZ |
+| 21 | Badnick, lady bug spring guy | 00 = Moves forward<br>10 = MOONWALKS!| 16 =<br>0A =<br>08 =<br>06 =<br>03 =<br>04 =<br>02 =<br>01 = | THZ<br>MGHZ |
 | 23 | - | 00 | 00 =<br>01 = | SEZ |
 | 24 | - | 00 | 00 | MGHZ |
 | 25 | - | 00 | 0B =<br>0A =<br>09 =<br>08 =<br>07 =<br>04 = | GPZ |
