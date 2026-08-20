@@ -35,13 +35,14 @@ CONST_ROM_FILESYSTEM_DATA = {
 
 ROM_SELECTION    = "sc"
 SYSTEM_SELECTION = "gg"
-LEVEL_SELECTION  = ["THZ1","THZ2","THZ3"]
+LEVEL_SELECTION  = ["THZ1","THZ2","THZ3","GPZ1","GPZ2","GPZ3","SEZ1","SEZ2","SEZ3","MGHZ1","MGHZ2","MGHZ3","APZ1","APZ2","APZ3","EEZ1","EEZ2","EEZ3"]
 OUTPUT_FILEPATH   = Path(__file__).resolve().parent / "combined_object_list.csv"
 ROM_DIR       = Path("./")
 ROM_FILEPATH  = None
 
 class AspectObject:
-    def __init__(self,hexData: bytearray,level:int,idx:int):
+    def __init__(self,hexData: bytearray,level:int,idx:int,offset:str):
+        self.address = offset
         self.type = hexData[0]
         self.x    = {"macro": hexData[1], "micro": hexData[2]}
         self.y    = {"macro": hexData[3], "micro": hexData[4]}
@@ -86,7 +87,7 @@ class AspectObject:
         params        = f"{obj.params:02x}".upper()
         tilesNormal   = f"{obj.tiles['normal']:02x}".upper()
         tilesReversed = f"{obj.tiles['reversed']:02x}".upper()
-        return f"{obj.level},{obj.index},{typ},{xMacro},{xMicro},{yMacro},{yMicro},{flags},{params},{tilesNormal},{tilesReversed}"
+        return f"{obj.level},{obj.index},{obj.address},{typ},{xMacro},{xMicro},{yMacro},{yMicro},{flags},{params},{tilesNormal},{tilesReversed}"
 
 def findRomData(selected_rom):
     global ROM_DIR,ROM_FILEPATH
@@ -122,12 +123,13 @@ def loadRomData(selected_rom, level_selection):
         end_idx = start_idx + bytes_to_read;
         current_block = rom_data[start_idx:end_idx]
         first_hex = current_block[0:1].hex().upper()
-        #print(f"Current Block: {current_block.hex(' ').upper()}")
-        new_object = AspectObject(current_block, level_selection, object_index)
-        object_list.append(new_object)
-        object_index += 1
-        current_offset = hex(end_idx)[2:].upper()
-
+        if first_hex != "FF":
+            #print(f"Current Block: {current_block.hex(' ').upper()}")
+            new_object = AspectObject(current_block, level_selection, object_index,current_offset)
+            object_list.append(new_object)
+            object_index += 1
+            current_offset = hex(end_idx)[2:].upper()
+            
     if first_hex == "FF":
         print ("------ End of Object List Reached due to ending character ------")
     else:
@@ -136,7 +138,7 @@ def loadRomData(selected_rom, level_selection):
     print ("------ Writing Object Data to CSV File ------")
     csv_file_path =  Path(__file__).resolve().parent / f"{level_selection}_object_list.csv"
     with open(csv_file_path, "w") as f:
-        f.write("Level,Object Index,Type,X Macro,X Micro,Y Macro,Y Micro,Flags,Params,Tiles Normal,Tiles Reversed\n")
+        f.write("Level,Object Index,Address,Type,X Macro,X Micro,Y Macro,Y Micro,Flags,Params,Tiles Normal,Tiles Reversed\n")
         for obj in object_list:
             f.write(obj.create_csv_record() + "\n")
 
@@ -146,7 +148,7 @@ def loadRomData(selected_rom, level_selection):
 
 def main():
     with open(OUTPUT_FILEPATH, "w") as f:
-        f.write("Level,Object Index,Type,X Macro,X Micro,Y Macro,Y Micro,Flags,Params,Tiles Normal,Tiles Reversed\n")
+        f.write("Level,Object Index,Address,Type,X Macro,X Micro,Y Macro,Y Micro,Flags,Params,Tiles Normal,Tiles Reversed\n")
         f.close()
 
     for level in LEVEL_SELECTION:
