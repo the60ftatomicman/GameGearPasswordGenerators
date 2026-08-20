@@ -15,7 +15,10 @@ WW   = tiles to read from the VRAM when the object is reversed
 FF   = end of object list (only appears once)
 
 ## Properties for All objects ##
-$28 $00 $02 $90 $03 -- set at 705AE
+XY Coords to make things easier to test
+- THZ1 $00 $02 $90 $03 -- set at 705AE for first object to spawn near sonic
+- GPZ1 $00 $02 $60 $02 -- set at 70959 for first object to spawn near sonic
+-
 ## Selecting Object Types (Based on what I see Existing in Roms) ##
 |Type code | What it is | Object Flags | Object params | Applicable Zones |
 | :--- | :--- | :--- | :--- | :--- |
@@ -26,14 +29,14 @@ $28 $00 $02 $90 $03 -- set at 705AE
 | 18 | End Level Spinner | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
 | 1B | Pop up Spikes | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ |
 | 20 | - | 00 | 00 =<br>01 = | SEZ |
-| 21 | Badnick, lady bug spring guy | 00 = Moves forward<br>10 = MOONWALKS!| 16 =<br>0A =<br>08 =<br>06 =<br>03 =<br>04 =<br>02 =<br>01 = | THZ<br>MGHZ |
+| 21 | Badnick, lady bug spring guy | 00 = Moves Right first<br>10 = moves left first| 16 =<br>0A =<br>08 =<br>06 =<br>03 =<br>04 =<br>02 =<br>01 = | THZ<br>MGHZ |
 | 23 | - | 00 | 00 =<br>01 = | SEZ |
 | 24 | - | 00 | 00 | MGHZ |
-| 25 | - | 00 | 0B =<br>0A =<br>09 =<br>08 =<br>07 =<br>04 = | GPZ |
-| 26 | - | 00 | 92 =<br>8C =<br>8A =<br>88 =<br>87 =<br>86 =<br>01 =<br>00 = | THZ<br>GPZ<br>SEZ<br>EEZ |
-| 27 | - | 10 | 00 | THZ |
-| 28 | - | 00 | 8B =<br>89 =<br>86 =<br>84 =<br>83 =<br>0A =<br>05 =<br>04 = | THZ<br>GPZ<br>SEZ<br>MGHZ<br>EEZ |
-| 2C | - | 00 | 00 =<br> 01 =<br>| GPZ<br>EEZ |
+| 25 | Badnick, elephant with shooter | 00 | 0B =<br>0A =<br>09 =<br>08 =<br>07 =<br>04 = | GPZ |
+| 26 | hidden spring | 00 | 92 = yellow<br>8C =Invis<br>8A =Invis<br>88 =<br>87 =<br>86 =<br>01 = Yellow<br>00 = nothing| THZ<br>GPZ<br>SEZ<br>EEZ |
+| 27 | Badnick, hornet drone | 10 | 00 | THZ |
+| 28 | Floating Platform - No Drop | 00 | 8B =<br>89 =<br>86 =<br>84 =<br>83 =<br>0A =<br>05 =<br>04 = | THZ<br>GPZ<br>SEZ<br>MGHZ<br>EEZ |
+| 2C | Badnick, hornet drone | 00 | 00 =<br> 01 =<br>| GPZ<br>EEZ |
 | 2E | - | 00 | 00 | MGHZ |
 | 2F | Riding Spring | 00 | 00 | SEZ<br>MGHZ |
 | 30 | - | 00 | 00 | APZ |
