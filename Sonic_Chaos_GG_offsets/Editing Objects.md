@@ -16,35 +16,37 @@ FF   = end of object list (only appears once)
 
 ## Properties for All objects ##
 XY Coords to make things easier to test
-- THZ1 $00 $02 $90 $03 -- set at 705AE for first object to spawn near sonic
-- GPZ1 $00 $02 $60 $02 -- set at 70959 for first object to spawn near sonic
--
+- THZ1 $00 $02 $90 $03  -- set at 705AE for first object to spawn near sonic
+- GPZ1 $00 $02 $60 $02  -- set at 70959 for first object to spawn near sonic
+- SEZ1 $10 $02 $CD $03  -- set at 70DF7 for first object to spawn near sonic
+- MGHZ1 $10 $02 $CD $02 -- set at 710C1 for first object to spawn near sonic (for coconut do 70 01 for Y axis)
+- APZ1 $10 $02 $CD $01  -- set at 713C1 for first object to spawn near sonic
 ## Selecting Object Types (Based on what I see Existing in Roms) ##
 |Type code | What it is | Object Flags | Object params | Applicable Zones |
 | :--- | :--- | :--- | :--- | :--- |
 | 09 | Single Ring | 00 | 00 = ??<br> 01 = ?? | THZ<br>GPZ<br>MGHZ<br>APZ<br>EEZ |
-| 0C | - | 00 | 00 | APZ |
+| 0C | Bubbles? | 00 | 00 | APZ |
 | 10 | TV Monitors | 00 | 08 = Tails 1up<br>06 = star invincibility<br>05 = stopwatch<br>04 = rocket shoes<br>03 = speed shoes<br>02 = sonic 1up<br>01 = rings | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
 | 17 | - | 00 | 02 | EEZ |
 | 18 | End Level Spinner | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
 | 1B | Pop up Spikes | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ |
-| 20 | - | 00 | 00 =<br>01 = | SEZ |
+| 20 | Badnick, fireball/yam looking guy | 00 | 00 = ??<br> 01 = ?? | SEZ |
 | 21 | Badnick, lady bug spring guy | 00 = Moves Right first<br>10 = moves left first| 16 =<br>0A =<br>08 =<br>06 =<br>03 =<br>04 =<br>02 =<br>01 = | THZ<br>MGHZ |
-| 23 | - | 00 | 00 =<br>01 = | SEZ |
-| 24 | - | 00 | 00 | MGHZ |
+| 23 | Badnick, pogostick guy | 00 | 00 = ??<br> 01 = ?? | SEZ |
+| 24 | Metal Coconut Bomb | 00 | 00 = Fall left<br> 01 = Fall Right | MGHZ |
 | 25 | Badnick, elephant with shooter | 00 | 0B =<br>0A =<br>09 =<br>08 =<br>07 =<br>04 = | GPZ |
 | 26 | hidden spring | 00 | 92 = yellow<br>8C =Invis<br>8A =Invis<br>88 =<br>87 =<br>86 =<br>01 = Yellow<br>00 = nothing| THZ<br>GPZ<br>SEZ<br>EEZ |
 | 27 | Badnick, hornet drone | 10 | 00 | THZ |
 | 28 | Floating Platform - No Drop | 00 | 8B =<br>89 =<br>86 =<br>84 =<br>83 =<br>0A =<br>05 =<br>04 = | THZ<br>GPZ<br>SEZ<br>MGHZ<br>EEZ |
 | 2C | Badnick, hornet drone | 00 | 00 =<br> 01 =<br>| GPZ<br>EEZ |
-| 2E | - | 00 | 00 | MGHZ |
+| 2E | Slowing Mud? Must be level with ground | 00 | 00 | MGHZ |
 | 2F | Riding Spring | 00 | 00 | SEZ<br>MGHZ |
-| 30 | - | 00 | 00 | APZ |
+| 30 | red vertical spring up | 00 | 00 | APZ |
 | 36 | - | 00 | 12 =<br>0E =<br>0C =<br>0A =<br> | EEZ |
 | 38 | - | 00 | 00 =<br> 01 =<br> | EEZ |
-| 3C | - | 00 | 00 =<br> 01 =<br> | APZ |
-| 3D | - | 00 | 08 =<br> 04 =<br>08 = | APZ |
-| 3F | - | 00 | 8B =<br> 86 =<br>83 = | APZ |
+| 3C | Spear Upwards | 00 | 00 =<br> 01 =<br> | APZ |
+| 3D | Badnick, Hot Dog guy | 00 | 08 =<br> 04 =<br>08 = | APZ |
+| 3F | Brown platform | 00 | 8B =<br> 86 =<br>83 = | APZ |
 | 50 | THZ Boss   | 00 | 00 | THZ  |
 | 51 | GPZ Boss   | 00 | 00 | GPZ  |
 | 54 | SEZ Boss   | 00 | 00 | SEZ  |
