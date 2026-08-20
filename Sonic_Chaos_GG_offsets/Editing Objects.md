@@ -15,19 +15,22 @@ WW   = tiles to read from the VRAM when the object is reversed
 FF   = end of object list (only appears once)
 
 ## Properties for All objects ##
-XY Coords to make things easier to test
+First, XY Coords to make things easier to test to validate or play with said objects.
+These points will put an object next to Sonic at the start.
 - THZ1 $00 $02 $90 $03  -- set at 705AE for first object to spawn near sonic
 - GPZ1 $00 $02 $60 $02  -- set at 70959 for first object to spawn near sonic
 - SEZ1 $10 $02 $CD $03  -- set at 70DF7 for first object to spawn near sonic
 - MGHZ1 $10 $02 $CD $02 -- set at 710C1 for first object to spawn near sonic (for coconut do 70 01 for Y axis)
 - APZ1 $10 $02 $CD $01  -- set at 713C1 for first object to spawn near sonic
+- EEZ1 $20 $02 $6D $04  -- set at 71631 for first object to spawn near sonic
+
 ## Selecting Object Types (Based on what I see Existing in Roms) ##
 |Type code | What it is | Object Flags | Object params | Applicable Zones |
 | :--- | :--- | :--- | :--- | :--- |
 | 09 | Single Ring | 00 | 00 = ??<br> 01 = ?? | THZ<br>GPZ<br>MGHZ<br>APZ<br>EEZ |
 | 0C | Bubbles? | 00 | 00 | APZ |
 | 10 | TV Monitors | 00 | 08 = Tails 1up<br>06 = star invincibility<br>05 = stopwatch<br>04 = rocket shoes<br>03 = speed shoes<br>02 = sonic 1up<br>01 = rings | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
-| 17 | - | 00 | 02 | EEZ |
+| 17 | Elevator | 00 | 02 | EEZ |
 | 18 | End Level Spinner | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ<br>APZ<br>EEZ |
 | 1B | Pop up Spikes | 00 | 00 | THZ<br>GPZ<br>SEZ<br>MGHZ |
 | 20 | Badnick, fireball/yam looking guy | 00 | 00 = ??<br> 01 = ?? | SEZ |
@@ -42,8 +45,8 @@ XY Coords to make things easier to test
 | 2E | Slowing Mud? Must be level with ground | 00 | 00 | MGHZ |
 | 2F | Riding Spring | 00 | 00 | SEZ<br>MGHZ |
 | 30 | red vertical spring up | 00 | 00 | APZ |
-| 36 | - | 00 | 12 =<br>0E =<br>0C =<br>0A =<br> | EEZ |
-| 38 | - | 00 | 00 =<br> 01 =<br> | EEZ |
+| 36 | Laser Turret Down | 00 | 12 =<br>0E =<br>0C =<br>0A =<br> | EEZ |
+| 38 | Badnick, bomb droid | 00 | 00 =<br> 01 =<br> | EEZ |
 | 3C | Spear Upwards | 00 | 00 =<br> 01 =<br> | APZ |
 | 3D | Badnick, Hot Dog guy | 00 | 08 =<br> 04 =<br>08 = | APZ |
 | 3F | Brown platform | 00 | 8B =<br> 86 =<br>83 = | APZ |
@@ -53,7 +56,7 @@ XY Coords to make things easier to test
 | 56 | MGHZ Boss  | 00 | 00 | MGHZ |
 | 59 | APZ Boss   | 00 | 00 | APZ  |
 | 5E | EEZ Boss 1 | 00 | 00 | EEZ  |
-| 60 | EEZ Boss 2 | 00 | 00 | EEZ |
+| 60 | EEZ Boss 2 | 00 | 00 | EEZ  |
 
 ## Setting position ##
 It seems like we adjust everything from TOPLEFT of the map.
