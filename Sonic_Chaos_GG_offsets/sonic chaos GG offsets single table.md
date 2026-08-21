@@ -131,8 +131,8 @@
   <tr><td colspan=18></td></tr>
   <tr> 
     <td>MGHZ1</td> 
-    <td>5267</td><td>710B8</td>
-    <td>710C1</td><td></td>
+    <td>5267</td><td></td>
+    <td>710C1</td><td>710B8</td>
     <td>559D4</td><td>559D4</td><td>128</td><td>32</td><td>192</td>
     <td>50000</td><td>50000</td> 
     <td>62230</td><td>619F0</td>
@@ -141,8 +141,8 @@
   </tr> 
   <tr> 
     <td>MGHZ2</td>
-    <td>527D</td><td>711F4</td>
-    <td>711F4</td><td></td>
+    <td>527D</td><td></td>
+    <td>711F4</td><td>711F4</td>
     <td>566B8</td><td>566B8</td><td>128</td><td>32</td><td>192</td>
     <td>50000</td><td>50000</td>  
     <td>62230</td><td>619F0</td>
@@ -151,8 +151,8 @@
   </tr> 
   <tr> 
     <td>MGHZ3</td>
-    <td>5293</td><td>71378</td>
-    <td>71378</td><td></td>
+    <td>5293</td><td></td>
+    <td>71378</td><td>71378</td>
     <td>572FB</td><td>572FB</td><td>120</td><td>24</td><td>192</td>
     <td>50000</td><td>50000</td>  
     <td>62230</td><td>619F0</td>
