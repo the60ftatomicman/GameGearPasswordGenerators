@@ -30,14 +30,22 @@ Who writes to d040?
 a ton! but _LABEL_4C02 looks like it loads it with the data we WANT
 TWIST! C400 == our true UNFILTERED ram location for the level layout. C4xx byte rows use the 15 bytes of the row to represent a level row. the 16th byte is skipped.
 The index of the balls below do NOT map to the palette colors directly. but rather the tiles in the sprite index.
-01 = black (guess)
+00 = empty
+01 = black
 02 = red
 03 = yellow
 04 = green
-05 = purple (guess)
-06 = orange (guess)
+05 = purple
+06 = orange
 07 = blue
-08 = light grey (guess)
+08 = light grey
+09 = green again
+0A = fire
+0B = water
+OC = lightening
+OD = pop animation 1
+0E = pop animation 2
+OF = some gem looking one that never pops
 
 
 _LABEL_43D2_ == we write the spheres out to c400 here.
@@ -53,6 +61,8 @@ the _LABEL_43D2_ label is the importabt one. above all of the RRCA calls, we loa
 
 YES!!!! AT 0F:959B we we see level one. it will load until it sees...FF!
 All levels defined this way. 
+THIS IS THE ANSWER!!!
+
 
 
 _LABEL_427_ = we dynamically set the VDP tile
