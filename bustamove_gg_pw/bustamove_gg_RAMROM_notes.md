@@ -71,3 +71,25 @@ _LABEL_427_ = we dynamically set the VDP tile
     -> _LABEL_47C9_ = label before 4ccF
         -> here we have a ton of aRAM checks
         -> the _RAM_D40_ spot doesn't control ball type
+
+
+----------- Palette hunt -------
+memory address 23,24 make our blue ball.
+under _LABEL_3D5_ this is done
+starting at 0F:A3A0 ---
+we read furthest bit than closest. it's backwards.
+it's 28 bytes, so lets map it out.
+bytes 1-0 (0F:A3A6-0F:A3A5) = white for scoreboard and orb accent
+bytes 3-2 (0F:A3A8-0F:A3A7) = BLUE for our orb
+bytes 5-4 (0F:A3AA-0F:A3A9) = GREEN for our orb and bub
+bytes 7-6 (0F:A3AC-0F:A3AB) = RED for our orb
+bytes 9-8 (0F:A3AE-0F:A3AD) = Yellow for our orb
+bytes 11-10 (0F:A3B0-0F:A3AF) = Bronze for machine
+bytes 13-12 (0F:A3B2-0F:A3B1) = Light Grey Orb
+bytes 15-14 (0F:A3B4-0F:A3B3) = Dark Grey Orb
+bytes 17-16 (0F:A3B4-0F:A3B3) = Purple Orb
+
+RGB mapping
+B1 B2
+00 00
+GR ?B
